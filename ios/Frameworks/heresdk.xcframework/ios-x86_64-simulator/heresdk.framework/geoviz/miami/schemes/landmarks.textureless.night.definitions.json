@@ -1,0 +1,28 @@
+{
+    "definitions": {
+        "Landmark.Color": {
+            "value": "#132d46b3"
+        },
+        "Landmark.ColorAmbient": {
+            "value": "#505050"
+        },
+        "Landmark.FakeAOColor": {
+            "value": "#07111d"
+        },
+        "Landmark.FakeAOHeight": {
+            "value": 1
+        },
+        "Landmark.GradientColor": {
+            "value": "#050b14"
+        },
+        "Landmark.Darken": {
+            "value": 0
+        },
+        "Landmark.Shininess": {
+            "value": 1
+        },
+        "Landmark.ColorSpecular": {
+            "value": "#3c3c3c"
+        }
+    }
+}
