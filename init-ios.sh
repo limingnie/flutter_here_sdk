@@ -34,8 +34,6 @@ print_help() {
 
 cd "$sdk_dir" || exit 1
 
-process heresdk
-
 while test $# -gt 0; do
     case "$1" in
         merge)
