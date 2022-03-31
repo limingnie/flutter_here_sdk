@@ -44,7 +44,7 @@ while test $# -gt 0; do
         split)
             split_file heresdk
             ;;
-        --delete-input-filie)
+        --delete-input-file)
             delete_input_file=1
             ;;
         -h | --help)
