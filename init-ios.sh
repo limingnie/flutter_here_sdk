@@ -7,6 +7,7 @@ delete_input_file=0
 # https://blog.csdn.net/fdipzone/article/details/37533129
 split_file() {
     name=$1
+    echo "split $name..."
     tar cvzf - $name | split -d -b 50m - $name.
     if [ $delete_input_file -eq 1 ]; then
         rm $name
@@ -15,6 +16,7 @@ split_file() {
 
 merge_file() {
     name=$1
+    echo "merge $name..."
     cat $name.* >$name.tar.gz
     tar xzvf $name.tar.gz
     rm $name.tar.gz
