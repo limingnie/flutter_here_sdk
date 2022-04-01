@@ -60,5 +60,3 @@ while test $# -gt 0; do
     esac
     shift
 done
-
-cd "$work_dir" || exit 1
