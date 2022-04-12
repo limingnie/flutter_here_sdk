@@ -23,7 +23,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-  plugin:
+  # plugin才是正确的字段名, 改成plugin_disabled, 则flutter不会将该package识别成plugin
+  plugin_disabled:
     platforms:
       android:
         package: com.here.here_sdk
