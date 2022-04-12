@@ -25,9 +25,14 @@ dev_dependencies:
 flutter:
   plugin:
     platforms:
-      android:
-        package: com.here.here_sdk
-        pluginClass: HereSdkPlugin
+      # 禁用android原生代码
+      # 注意, 当前这个配置只影响GeneratedPluginRegistrant文件的生成, gradle判断一个flutter插件是否支持android, 的依据是`android/build.gradle`文件是否存在
+      # 故, 还需要将`android/build.gradle`改个名才能真正禁用😅
+      # @see https://github.com/flutter/flutter/blob/c8538873c80e34231d7a93f9ca1e5ec22c8804b1/packages/flutter_tools/gradle/flutter.gradle#L535
+      # @see https://github.com/flutter/flutter/blob/10fbbafe09efdd7757213daca6924724312fdfd0/packages/flutter_tools/test/integration.shard/gradle_non_android_plugin_test.dart
+      # android:
+      #   package: com.here.here_sdk
+      #   pluginClass: HereSdkPlugin
       ios:
         pluginClass: HereSdkPlugin
 
